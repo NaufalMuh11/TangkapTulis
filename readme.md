@@ -10,12 +10,10 @@ A comprehensive deep learning project for handwriting recognition using TensorFl
 handwriting-recognition/
 ├── 📓 fp_beginner.ipynb       # Main implementation notebook
 ├── 🤖 model/                  # Pre-trained models directory
-│   ├── model26.h5            # Main model (HDF5 format)
-│   ├── model26.keras         # Main model (Keras format)
-│   └── modelaa.h5            # Alternative model version
 ├── 🐍 environment.yml         # Conda environment configuration
 ├── 📊 data/                   # Dataset directory (after download)
-└── 📖 README.md              # Project documentation
+├── 📒 kaggle.json             # Kaggle key
+└── 📖 README.md               # Project documentation
 ```
 
 ---
@@ -119,13 +117,13 @@ Load existing models for immediate use:
 import tensorflow as tf
 
 # Load Keras format (recommended)
-model = tf.keras.models.load_model('model/model26.keras')
+model = tf.keras.models.load_model('model/model50v2.keras')
 
 # Load HDF5 format (legacy)
-model = tf.keras.models.load_model('model/model26.h5')
+model = tf.keras.models.load_model('model/model50v2.h5')
 
 # Alternative model
-alt_model = tf.keras.models.load_model('model/modelaa.h5')
+alt_model = tf.keras.models.load_model('model/model50v1.h5')
 ```
 
 ---
