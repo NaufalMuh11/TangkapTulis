@@ -6,9 +6,10 @@ dependencies:
   - python=3.10
   - pip
   - pip:
-      - opencv-python
+      - opencv-python-headless==4.8.1.78
       - numpy
       - pandas
       - matplotlib
       - tensorflow[and-cuda]
       - keras
+      
